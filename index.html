@@ -128,6 +128,7 @@ ol.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:r
 ol.steps li{counter-increment:s;display:flex;flex-direction:column;gap:8px;border-top:2px solid var(--accent);padding-top:14px}
 ol.steps li::before{content:"Step " counter(s);font:500 .72rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 ol.steps p{color:var(--muted);font-size:.96rem}
+ol.steps .when{align-self:flex-start;font:600 .8rem/1 var(--display);background:var(--tag);color:var(--tag-ink);padding:6px 10px;border-radius:999px}
 
 /* packages */
 .pk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -286,6 +287,7 @@ footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;pa
   <div class="in">
     <div class="head"><span class="eyebrow">More experience</span><h2>We've run these jobs from the inside</h2></div>
     <div class="rows">
+      <div><h3>Family fruit market, Brooklyn</h3><p>Brought OTC card companies into the store and set up acceptance at the register. The store now averages about $35,000 a month in in-store sales.</p></div>
             <div><h3>Family grocery, Brooklyn</h3><p>General management of a family grocery, including staff, vendors and day-to-day operations. <span class="todo">dates</span></p></div>
     </div>
   </div>
@@ -293,12 +295,12 @@ footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;pa
 
 <section class="s alt" id="process">
   <div class="in">
-    <div class="head"><span class="eyebrow">How it works</span><h2>From first call to monthly report</h2></div>
+    <div class="head"><span class="eyebrow">How it works</span><h2>From first call to running on its own</h2><p class="lead">Most stores are fully set up within two weeks. After that, it runs without taking your time.</p></div>
     <ol class="steps">
-      <li><h3>Free call</h3><p>Twenty minutes on your store, your customers and what's taking up your time.</p></li>
-      <li><h3>Store review</h3><p>We look at your Google listing, social pages, website and renewal dates.</p></li>
-      <li><h3>One-page plan</h3><p>What we'll handle, when, and the monthly price. No surprises.</p></li>
-      <li><h3>We get to work</h3><p>You get a short report each month showing what we did and what changed.</p></li>
+      <li><span class="when">Day 1</span><h3>A free 20-minute call</h3><p>Tell us what's eating your time. Is it the OTC paperwork piling up, the Instagram nobody posts to, or the Google listing with last year's hours? We listen first and sell nothing on this call.</p></li>
+      <li><span class="when">Week 1</span><h3>We walk your store</h3><p>We come in person and look at it the way your customers do: the aisles, the register, which benefit cards you accept, your Google listing, your reviews and your social pages. Most owners learn at least one thing they didn't know.</p></li>
+      <li><span class="when">Week 2</span><h3>Your one-page plan</h3><p>A single page that shows what's costing you customers, what we'll fix first, the dates, and one monthly price. You can say yes to all of it or just one piece.</p></li>
+      <li><span class="when">Every day after</span><h3>We run it, you see it</h3><p>We post, file, fix and follow up. Daily OTC updates go to your business email, and once a month you get a short report: what we did, what changed, and what's next.</p></li>
     </ol>
   </div>
 </section>
