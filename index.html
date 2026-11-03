@@ -135,6 +135,11 @@ ol.steps .when{align-self:flex-start;font:600 .8rem/1 var(--display);background:
 @media (max-width:900px){.pk{grid-template-columns:1fr}}
 .pk .card.pop{border:2px solid var(--accent)}
 .pk .price{font:700 1.4rem/1 var(--display)}
+.pk .tier{font:500 .7rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pk h3{font-size:1.35rem}
+.pk .who{color:var(--ink);font-size:.98rem}
+.pk .change{color:var(--muted);font-size:.95rem;border-left:3px solid var(--tag);padding-left:10px}
+.pk .who strong,.pk .change strong{font-weight:600}
 .pk .badge{align-self:flex-start;font:500 .68rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:var(--bg);padding:6px 8px;border-radius:999px}
 
 /* faq */
@@ -300,11 +305,29 @@ footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;pa
 
 <section class="s" id="packages">
   <div class="in">
-    <div class="head"><span class="eyebrow">Packages</span><h2>Start small, add more when it pays off</h2><p class="lead">Every store is different, so we price each one after a free call. You'll get a one-page quote with one setup fee and one monthly price, and nothing hidden.</p></div>
+    <div class="head"><span class="eyebrow">Packages</span><h2>Find the plan that sounds like your store</h2><p class="lead">Every store is different, so we price each one after a free call. You'll get a one-page quote with one setup fee and one monthly price, and nothing hidden.</p></div>
     <div class="pk">
-      <article class="card"><h3>Basic</h3><p class="price">Monthly plan</p><p>For stores that need to be found online.</p><ul><li>A phone-friendly website, with hosting, plugins and website fees included</li><li>Business email setup, no extra setup cost</li><li>Google Business Profile set up and kept current</li><li>Third-party listings and services connected and matched</li></ul><p class="fine">Website, email and listing fees are included in your price.</p></article>
-      <article class="card pop"><span class="badge">Most stores start here</span><h3>Grow</h3><p class="price">Monthly plan</p><p>For stores ready to bring in new customers every week.</p><ul><li>Everything in Basic</li><li>1 to 2 social media posts and videos each week (extra posts available at added cost)</li><li>One in-store event a month</li><li>Monthly report</li></ul></article>
-      <article class="card"><h3>Full service</h3><p class="price">Pay as you grow</p><p>A small base, and we only earn more when your new sales come in. If sales don't grow, you don't pay extra.</p><ul><li>Everything in Grow</li><li>OTC Network and ProHealth cards managed, plus EBT/SNAP renewals</li><li>Introductions to buyers and brands</li><li>Priority support</li></ul><p class="fine">Built around your store on the call, with no surprises and no long contract.</p></article>
+      <article class="card">
+        <span class="tier">Basic</span><h3>Get Found</h3>
+        <p class="who"><strong>For you if</strong> customers say "I didn't know you were here," Google still shows last year's hours, or you're emailing vendors from a personal Gmail.</p>
+        <p class="change"><strong>What changes:</strong> someone nearby searches "grocery near me" and finds you, with the right hours, real photos, and a website that loads on their phone.</p>
+        <ul><li>Phone-friendly website, with hosting and plugins included</li><li>Business email at your own domain</li><li>Google Business Profile set up and kept current</li><li>Third-party listings connected and matched</li></ul>
+        <p class="fine">Website, email and listing fees are included.</p>
+      </article>
+      <article class="card pop">
+        <span class="badge">Most stores start here</span><span class="tier">Grow</span><h3>Fill the Aisles</h3>
+        <p class="who"><strong>For you if</strong> people can find you, but it's the same regulars every week, and nobody on your team has time to post.</p>
+        <p class="change"><strong>What changes:</strong> new neighbors see what just came in before they ever walk through the door, from videos filmed in your own aisles.</p>
+        <ul><li>Everything in Get Found</li><li>1 to 2 posts and short videos each week</li><li>One in-store event a month, like a tasting or holiday special</li><li>A monthly report in plain language</li></ul>
+        <p class="fine">Need more posts? Add them anytime.</p>
+      </article>
+      <article class="card">
+        <span class="tier">Full service</span><h3>Run It For Me</h3>
+        <p class="who"><strong>For you if</strong> you want OTC cards accepted, EBT renewals handled, and bigger buyers calling, without adding any of it to your day.</p>
+        <p class="change"><strong>What changes:</strong> we work like part of your team. The marketing, the benefit-card paperwork and the partnerships all run, and you get the daily and monthly updates.</p>
+        <ul><li>Everything in Fill the Aisles</li><li>OTC Network and ProHealth cards managed, plus EBT/SNAP renewals</li><li>Introductions to wholesale buyers, caterers and brands</li><li>Priority support</li></ul>
+        <p class="fine">Pay as you grow: a small base, and we earn more only when your new sales come in.</p>
+      </article>
     </div>
   </div>
 </section>
